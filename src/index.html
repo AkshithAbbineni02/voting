@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Smart Contracts using BlockChain Technology</title>
+    <link href="../src/css/index.css" rel="stylesheet">   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    
+  </head>
+  <body style="background-color: #a29f9f;">
+    <ul style="list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    size: 18px;">
+      <li style="float: left;
+      padding-left: 590px;
+      border-right:1px solid #bbb;">
+      
+      <a style="display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      size: 18px;" class="active" href="#home">Home</a></li>
+
+      <li style="float: left;
+      padding-left: 10px;">
+
+      <a style="display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;" href="About.html">About</a></li>
+    </ul>
+
+    <div class="container" style="width: 700px;">
+      <div class="row" >
+        <div class="">
+          <h1 class="text-center">Voting using Blockchain Technology</h1>
+          
+        </div>
+      </div>
+
+      <div id="loader" class="row" style="font-size: large;">
+        <p class="text-center">loading..</p>
+      </div>
+
+      <div id="content">
+        <table class="table">
+          <thead>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Votes</th>
+          </thead>
+          <tbody id="contestantsResults">
+          </tbody>
+          <hr/>
+          <p id="accountAddress" class="text-center"></p>
+        </table>
+
+        <form onSubmit="App.castVote(); return false;">
+          <div class="form-group">
+            <label for="contestantsSelect">Select Contestant :-</label>&nbsp;
+            <select class="select-control" id="contestantsSelect" style="text-align: center; background-color:#C3C0BF ; ">
+            </select>
+          </div><br><br>
+          <div style="align-items: center; text-align: center;">
+          <button type="submit" class="btn btn-primary">Cast your Vote</button>
+        </div>
+        </form>
+      </div>
+
+    </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
